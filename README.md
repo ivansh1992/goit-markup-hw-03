@@ -1,1 +1,13 @@
-# goit-markup-hw-02
+# goit-markup-hw-03
+B1
+B2
+B3
+B4
+B5
+B6
+B9
+B10
+B11
+B12
+B16
+B17

@@ -14,6 +14,12 @@ body {
   --color-footer-contact: rgba(255, 255, 255, 0.6);
   --color-background-button: #f5f4fa;
 }
+.top {
+  border-bottom: 1px solid #ececec;
+  padding-left: 215px;
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
 .top a {
   text-decoration: none;
   color: var(--color-title);
@@ -29,9 +35,15 @@ body {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--color-title);
+  display: inline;
+  padding-right: 93px;
 }
+
 .higlight {
   color: var(--color-variable);
+}
+nav {
+  display: inline;
 }
 .list {
   list-style: none;
@@ -40,10 +52,15 @@ body {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  display: inline;
 }
-.contact a {
-  color: var(--color-text);
+.list li {
+  display: inline;
 }
+.list li:nth-child(n + 1) {
+  padding-left: 46px;
+}
+
 .contact {
   list-style: none;
   font-family: "Roboto";
@@ -51,6 +68,17 @@ body {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  display: inline;
+  padding-left: 371px;
+}
+.contact li {
+  display: inline;
+}
+.contact li:nth-child(n + 1) {
+  padding-left: 50px;
+}
+.contact a {
+  color: var(--color-text);
 }
 .slogan {
   width: 1600px;
@@ -223,4 +251,12 @@ footer a {
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--color-title);
+}
+.container {
+  width: 1200px;
+  text-align: center;
+}
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
