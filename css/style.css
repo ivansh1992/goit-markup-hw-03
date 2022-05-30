@@ -3,6 +3,7 @@ body {
   width: 1600px;
   height: 2349px;
   color: #757575;
+  margin: auto;
 }
 :root {
   --color-variable: #2196f3;
@@ -19,6 +20,7 @@ body {
   padding-left: 215px;
   padding-top: 24px;
   padding-bottom: 25px;
+  margin-bottom: 94px;
 }
 .top a {
   text-decoration: none;
@@ -80,10 +82,13 @@ nav {
 .contact a {
   color: var(--color-text);
 }
-.slogan {
+main {
   width: 1600px;
+}
+.slogan {
   height: 600px;
   background: var(--color-background);
+  display: flex;
 }
 .slogan-text {
   font-family: "Roboto";
@@ -94,6 +99,8 @@ nav {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--color-slogan);
+  width: 700px;
+  margin: auto;
 }
 .slogan-button {
   width: 200px;
@@ -111,6 +118,9 @@ nav {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--color-text);
+  display: flex;
+  padding-left: 0;
+  text-align: left;
 }
 .advantages-indention {
   font-family: "Roboto";
@@ -121,13 +131,14 @@ nav {
   text-transform: uppercase;
   color: var(--color-title);
 }
-.offer {
-  width: 1170px;
-  margin-left: 215px;
-}
+
 .list-offer {
   list-style: none;
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
 }
+
 .offer-caption {
   font-family: "Roboto";
   font-weight: 700;
@@ -138,7 +149,6 @@ nav {
   color: var(--color-title);
 }
 .team {
-  width: 1600px;
   background: #f5f4fa;
 }
 .team-caption {
@@ -152,7 +162,15 @@ nav {
 }
 .team ul {
   list-style: none;
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
 }
+
+figure {
+  margin: 0;
+}
+
 .team-list {
   width: 270px;
   height: 368px;
@@ -162,6 +180,7 @@ nav {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--color-text);
+  background-color: white;
 }
 .team-indention {
   font-family: "Roboto";
@@ -172,10 +191,11 @@ nav {
   letter-spacing: 0.03em;
   color: var(--color-title);
 }
-.botton {
+.bottom {
   width: 1600px;
   height: 252px;
   background: var(--color-background);
+  display: flex;
 }
 .logo {
   font-family: "Raleway";
@@ -185,8 +205,10 @@ nav {
   line-height: 1.19;
   letter-spacing: 0.03em;
 }
-.botton-list {
+.bottom-list {
   list-style: none;
+  text-align: left;
+  padding-left: 0;
 }
 footer a {
   text-decoration: none;
@@ -194,7 +216,7 @@ footer a {
 .studio {
   color: #fff;
 }
-.botton address {
+.bottom address {
   font-family: "Roboto";
   font-size: 14px;
   line-height: 1.71;
@@ -202,7 +224,7 @@ footer a {
   color: var(--color-adress);
 }
 
-.botton-contact {
+.bottom-contact {
   font-family: "Roboto";
   font-weight: 400;
   font-size: 14px;
@@ -210,12 +232,13 @@ footer a {
   letter-spacing: 0.03em;
   color: var(--color-footer-contact);
 }
-.botton a:hover,
-.botton a:focus {
+.bottom a:hover,
+.bottom a:focus {
   color: var(--color-variable);
 }
 .pushbutton {
-  width: 1170px;
+  padding-left: 510px;
+  display: inline;
 }
 .pushbutton button {
   font-family: "Roboto";
@@ -230,6 +253,13 @@ footer a {
 }
 .pushbutton-list {
   list-style: none;
+  display: inline;
+}
+.pushbutton-list-item {
+  display: inline;
+}
+.pushbutton-list-item:nth-child(n + 1) {
+  padding-left: 8px;
 }
 .pushbutton button:hover,
 .pushbutton button:focus {
@@ -237,12 +267,39 @@ footer a {
   color: #fff;
 }
 .portfolio {
+  padding-bottom: 94px;
+}
+.portfolio-list {
   list-style: none;
   font-family: "Roboto";
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
   color: var(--color-text);
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 215px;
+  padding-top: 34px;
+}
+.portfolio-image {
+  margin: 15px 30px 15px 30px;
+  border: 1px solid #eeeeee;
+}
+.portfolio-image:nth-child(3n + 1) {
+  margin-left: 0;
+}
+.portfolio-image:nth-child(3n + 3) {
+  margin-right: 0;
+}
+.portfolio-image:nth-child(-n + 3) {
+  margin-top: 0;
+}
+.portfolio-image:nth-last-child(-n + 3) {
+  margin-bottom: 0;
+}
+.portfolio-list h3,
+p {
+  padding-left: 24px;
 }
 .portfolio-indention {
   font-family: "Roboto";
@@ -255,6 +312,7 @@ footer a {
 .container {
   width: 1200px;
   text-align: center;
+  margin: auto;
 }
 .section {
   padding-top: 94px;
