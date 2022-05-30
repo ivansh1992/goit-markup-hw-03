@@ -283,7 +283,7 @@ footer a {
 }
 .portfolio-image {
   margin: 15px 30px 15px 30px;
-  border: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
 }
 .portfolio-image:nth-child(3n + 1) {
   margin-left: 0;
