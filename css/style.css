@@ -130,6 +130,8 @@ ul {
 .advantages {
   display: flex;
   justify-content: center;
+  padding-left: 0;
+  padding-right: 0;
 }
 .advantages-list {
   list-style: none;
@@ -139,8 +141,13 @@ ul {
   letter-spacing: 0.03em;
   color: var(--color-text);
   display: flex;
-  padding-left: 0;
   text-align: left;
+}
+.advantages-list-item {
+  width: 270px;
+}
+.advantages-list-item:not(:last-child) {
+  margin-right: 30px;
 }
 .advantages-indention {
   font-family: "Roboto";
@@ -277,11 +284,11 @@ footer a {
   border: 0;
   cursor: pointer;
   margin-top: 94px;
+  padding: 6px 22px;
 }
 .pushbutton-list {
   list-style: none;
   display: inline;
-  padding-bottom: 50px;
 }
 .pushbutton-list-item {
   display: inline;
@@ -307,7 +314,7 @@ footer a {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding-top: 64px;
+  padding-top: 50px;
 }
 .portfolio-image {
   margin-bottom: 30px;
